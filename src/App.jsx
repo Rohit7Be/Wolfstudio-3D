@@ -2,7 +2,14 @@ import React from "react";
 import Dog from "./components/Dog";
 import { Canvas } from "@react-three/fiber";
 import "./App.css";
+
+
+
+
 const App = () => {
+
+
+
   return (
     <>
       <main>
@@ -19,9 +26,15 @@ const App = () => {
         >
           <Dog />
         </Canvas>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section id="section1">
+          <nav>
+            <div className="nav_elem">Wolf Studio</div>
+            <div>Show Reel</div>
+            <div></div>
+          </nav>
+        </section>
+        <section id="section2"></section>
+        <section id="section3"></section>
       </main>
     </>
   );
