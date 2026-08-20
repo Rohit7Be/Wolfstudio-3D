@@ -14,7 +14,7 @@ const Dog = () => {
   const { camera, gl } = useThree();
 
   useEffect(() => {
-    camera.position.z = 0.7;
+    camera.position.z = 0.6;
     camera.lookAt(0, 0, 0);
     gl.toneMapping = THREE.ReinhardToneMapping;
     gl.outputColorSpace = THREE.SRGBColorSpace;

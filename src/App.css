@@ -11,7 +11,7 @@ body,
   font-family: Gilroy;
 }
 main{
-  position: relative;
+  
   color:whitesmoke;
 }
 body {
@@ -29,7 +29,7 @@ section {
 
 #section1{
   nav{
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100px;
     display: flex;
@@ -37,8 +37,59 @@ section {
     justify-content: space-between;
     
   }
-  .nav_elem{
-    max-width: 6rem;
+  .middle{
+    padding-top: 100px;
+    display: flex;
   }
+  .nav_elem{
+    
+    padding: 10px;
+    cursor: pointer;
+  }
+  .nav_elem:nth-child(1){
+    font-size: 30px;
+    font-weight: 600;
+  }
+  nav .nav_elem:nth-child(2){
+    font-size: 20px;
+    font-weight: 500;
+    i{
+      color: red;
+    }
+  }
+  .nav_elem:nth-child(3){
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .right, .left{
+    width: 50%;
+    
+  }
+  .left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-block: 3rem;
+
+    h1{
+      font-size: 80px;
+      line-height: 80px;
+      padding-left: 50px;
+      text-align: right;
+    }
+  }
+
+  .bottom{
+    display: flex;
+    color: rgb(168, 160, 160);
+
+    .bRight, .bLeft{
+    width: 50%;
+  }
+  }
+  
+  
+
 }
 
