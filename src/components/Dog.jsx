@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { useThree } from "@react-three/fiber";
 import { OrbitControls, useGLTF, useTexture } from "@react-three/drei";
 import { useAnimations } from "@react-three/drei";
 import gsap from "gsap";
@@ -11,14 +10,6 @@ const Dog = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const model = useGLTF("/models/dog.drc.glb");
-  const { camera, gl } = useThree();
-
-  useEffect(() => {
-    camera.position.z = 0.6;
-    camera.lookAt(0, 0, 0);
-    gl.toneMapping = THREE.ReinhardToneMapping;
-    gl.outputColorSpace = THREE.SRGBColorSpace;
-  }, [camera, gl]);
 
   const { actions } = useAnimations(model.animations, model.scene);
 
@@ -77,7 +68,7 @@ const Dog = () => {
 
     tl
     .to(dogModel.current.scene.position, {
-      z: "-=0.7",
+      z: "-=1",
       y: "+=0.1",
     })
     .to(dogModel.current.scene.rotation, {
@@ -88,7 +79,7 @@ const Dog = () => {
       
     }, "third")
     .to(dogModel.current.scene.position, {
-      z: "+=0.6",
+      z: "+=0.9",
       y: "-=0.1",
       x: "-=0.5",
     }, "third");
