@@ -9,13 +9,13 @@ const App = () => {
     <>
       <main>
         <div className="images">
-          <img src="/tommorowland.png" alt="Tomorrowland project" />
-          <img src="/navy-pier.png" alt="Navy Pier" />
-          <img src="/msi-chicago.png" alt="MSI Chicago" />
-          <img src="/phone.png" alt="This Was Louise's Phone project" />
-          <img src="/kikk.png" alt="KIKK Festival 2018 project" />
-          <img src="/kennedy.png" alt="The Kennedy Center project" />
-          <img src="/opera.png" alt="Royal Opera of Wallonia project" />
+          <img id="tommorowland" src="/tommorowland.png" alt="Tomorrowland project" />
+          <img id="navy-pier" src="/navy-pier.png" alt="Navy Pier" />
+          <img id="msi-chicago" src="/msi-chicago.png" alt="MSI Chicago" />
+          <img id="phone" src="/phone.png" alt="This Was Louise's Phone project" />
+          <img id="kikk" src="/kikk.png" alt="KIKK Festival 2018 project" />
+          <img id="kennedy" src="/kennedy.png" alt="The Kennedy Center project" />
+          <img id="opera" src="/opera.png" alt="Royal Opera of Wallonia project" />
           
         </div>
         <Canvas id="canvas_elem"
@@ -70,37 +70,56 @@ const App = () => {
         </section>
         <section id="section2">
           <div className="titles">
-            <div className="title">
+            <div img-title="tommorowland" className="title">
               <small>2020-Ongoing</small>
               <h1>TommorrowLand</h1>
             </div>
-            <div className="title">
+            <div img-title="navy-pier" className="title">
               <small>2020-Ongoing</small>
               <h1>Navy Pier</h1>
             </div>
-            <div className="title">
+            <div img-title="msi-chicago" className="title">
               <small>2020-Ongoing</small>
               <h1>MSI Chicago</h1>
             </div>
-            <div className="title">
+            <div img-title="phone" className="title">
               <small>2020-Ongoing</small>
               <h1>This was Louise's phone</h1>
             </div>
-            <div className="title">
+            <div img-title="kikk" className="title">
               <small>2020-Ongoing</small>
               <h1>KIKK Festival 2018</h1>
             </div>
-            <div className="title">
+            <div img-title="kennedy" className="title">
               <small>2020-Ongoing</small>
               <h1>The Kennedy Center</h1>
             </div>
-            <div className="title">
+            <div img-title="opera" className="title">
               <small>2020-Ongoing</small>
               <h1>Royal Opera of Wallonia</h1>
             </div>
           </div>
         </section>
-        <section id="section3"></section>
+        <section id="section3">
+          <div className="top">
+            <div className="topLeft">
+              <h1>Wolfstudio is a multidisciplinary <br/>creative studio at the <br/>
+                intersection of technology.
+                <br /> 
+                </h1>
+            </div>
+            <div className="topRight">
+              
+            </div>
+          </div>
+          <div className="bottom">
+              <div className="bottomLeft"></div>
+              <div className="bottomRight">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cumque libero nobis laborum iusto repudiandae, quia ipsum sint amet sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, odit dolore dicta recusandae cupiditate debitis, a eius repellat repellendus nobis iure iste.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit perspiciatis animi quae, rem veritatis ullam alias soluta quaerat velit quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a recusandae consectetur ipsam possimus neque delectus natus asperiores in architecto. Nobis, itaque!</p>
+              </div>
+          </div>
+        </section>
       </main>
     </>
   );

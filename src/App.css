@@ -22,7 +22,6 @@ body {
 section {
   width: 100%;
   min-height: 100vh;
-  border: 2px solid white;
   position: relative;
   z-index: 1;
 }
@@ -133,7 +132,7 @@ section {
   .titles{
     display: flex;
     flex-direction: column;
-    padding-block: 10rem;
+    margin-block: 10rem;
     padding-left: 17rem;
   }
   .title{
@@ -162,7 +161,7 @@ section {
 }
 
 main:has(#section2 .title:hover) #canvas_elem::after{
-  opacity: 0.5;
+  opacity: 0;
 }
 
 .images{
@@ -179,5 +178,52 @@ main:has(#section2 .title:hover) #canvas_elem::after{
     height: 100%;
     object-fit: cover;
     transition: all 0.3s ease-in-out;
+    opacity: 0;
+  }
+}
+
+main:has(#section2 .title[img-title="tommorowland"]:hover) .images #tommorowland,
+main:has(#section2 .title[img-title="navy-pier"]:hover) .images #navy-pier,
+main:has(#section2 .title[img-title="msi-chicago"]:hover) .images #msi-chicago,
+main:has(#section2 .title[img-title="phone"]:hover) .images #phone,
+main:has(#section2 .title[img-title="kikk"]:hover) .images #kikk,
+main:has(#section2 .title[img-title="kennedy"]:hover) .images #kennedy,
+main:has(#section2 .title[img-title="opera"]:hover) .images #opera {
+  opacity: 1;
+}
+
+#section3{
+  padding-block: 10rem;
+  padding-inline: 10rem;
+  /* Let the section's children stack against the fixed canvas. */
+  z-index: auto;
+ 
+  .top{
+    position: relative;
+  }
+  .top,.bottom{
+    display: flex;
+    width: 100%;
+  }
+  .topLeft{
+    position: relative;
+    z-index: -1;
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    opacity: 0.7;
+    
+  }
+
+
+  .topLeft, .topRight, .bottomLeft, .bottomRight{
+    width: 50%;
+  }
+  .bottomRight{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin-block: 5rem;
   }
 }
