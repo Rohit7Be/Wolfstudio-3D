@@ -36,3 +36,9 @@ I created this project to learn how to work with 3D models and this is my first 
 - How to connect page scroll to 3D transformations using GSAP ScrollTrigger
 - How to combine DOM interactions, CSS hover selectors, and WebGL state for a cohesive experience
 - How to make cursor-driven 3D motion feel natural with interpolation and frame-based updates
+
+<p align="center">
+  <img width="1882" height="818" alt="Image" src="https://github.com/user-attachments/assets/df139093-27f1-4cf5-84ea-ccd00bc9c29c" />
+<img width="1714" height="763" alt="Image" src="https://github.com/user-attachments/assets/916cfb31-7142-4228-b566-baea47d4d863" />
+<img width="1405" height="733" alt="Image" src="https://github.com/user-attachments/assets/0aefd38a-e7c2-43c2-aa00-f7d1b842a50e" />
+</p>
